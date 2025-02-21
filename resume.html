@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Joshua Barazan Paloa - Resume</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e4e4e4;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #008080, #00ffcc);
+            padding: 40px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .resume-section {
+            margin-bottom: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .resume-section:hover {
+            transform: translateY(-10px);
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            color: #00ffcc;
+            border-bottom: 2px solid #00ffcc;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-content {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 30px;
+        }
+
+        .experience-item h3, .education-item h3 {
+            font-size: 1.8em;
+            color: #00ffcc;
+        }
+
+        .experience-item p, .education-item p {
+            font-size: 1.1em;
+            color: #b3b3b3;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-label {
+            font-size: 1.2em;
+            color: #00ffcc;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            background-color: #333;
+            border-radius: 30px;
+            overflow: hidden;
+            height: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #008080, #00ffcc);
+            width: 0;
+            border-radius: 30px;
+            transition: width 1.5s ease-in-out;
+        }
+
+        footer {
+            background-color: #121212;
+            color: #e4e4e4;
+            text-align: center;
+            padding: 30px;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 1em;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Michael Joshua Barazan Paloa</h1>
+        <p>Aspiring Full Stack Developer | 3rd Year IT Student</p>
+    </header>
+
+    <div class="container">
+        <div class="resume-section">
+            <div class="section-title">Experience</div>
+            <div class="section-content">
+                <div class="section-content">
+                    <p>I am currently gaining hands-on experience in coding and web development while pursuing my undergraduate studies. Over the past few years, I have built several personal projects, ranging from simple websites to more complex applications. Through coursework, self-learning, and real-world projects, I have strengthened my problem-solving skills and learned new technologies such as JavaScript, React, and Node.js. I am passionate about continuous learning and strive to stay updated with the latest trends in web development. My goal is to apply my knowledge in a professional environment and further enhance my skills through practical experience and collaboration with others.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <div class="section-title">Education</div>
+            <div class="section-content">
+                <div class="education-item">
+                    <h3>Bachelor's in Information Technology (Undergraduate)</h3>
+                    <p>Agusan del Sur State University | 3rd Year</p>
+                    <p>Focusing on programming, database management, and web development.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <div class="section-title">Skills</div>
+            <div class="section-content">
+                <ul class="skills-list">
+                    <li class="skill-item">
+                        <div class="skill-label">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-skill="50"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-label">React</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-skill="50"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-label">Node.js</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-skill="60"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-label">MongoDB</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-skill="75"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-label">HTML & CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-skill="80"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-label">Git & GitHub</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-skill="85"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <div class="section-title">Contact</div>
+            <div class="section-content">
+                <p>Email: michaeljoshuapaloa@gmail.com</p>
+                <p>Phone: +63:9532765484</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&#169; 2024 Michael Joshua Barazan Paloa. All rights reserved.</p>
+        <button style="background-color: #00ffcc; width: 100px; height: 50px;"><a href="index.html">Back</a></button>
+    </footer>
+
+    <script>
+        // Animate skill bars on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillBars = document.querySelectorAll('.skill-bar-fill');
+            skillBars.forEach(bar => {
+                const skillLevel = bar.getAttribute('data-skill');
+                bar.style.width = skillLevel + '%';
+            });
+        });
+    </script>
+   
+</body>
+</html>
